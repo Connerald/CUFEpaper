@@ -86,7 +86,7 @@
     \centering
     {\songti\fontsize{14pt}{22pt}\selectfont
       \vspace*{2\baselineskip}
-      \includegraphics[width=0.65\textwidth]{figures/school_logo.png}\par
+      \includegraphics[width=0.65\textwidth]{figures/logo/school_logo.png}\par
     } % 这里完全参照中央财经大学课程论文、报告、案例分析考核封面
     % 封面表格部分，楷体小四号，双倍行距
     {\kaishu\fontsize{14pt}{18pt}\selectfont
