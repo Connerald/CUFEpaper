@@ -33,9 +33,10 @@
 \RequirePackage{amsfonts} % 数学字体支持
 \RequirePackage{amssymb} % 数学符号支持
 \RequirePackage{hyperref} % 超链接支持
+\RequirePackage{setspace} % 行距设置
 
 % 字体设置
-\setCJKmainfont[AutoFakeBold=2]{SimSun}
+\setCJKmainfont[AutoFakeBold=3]{SimSun}
 \setmainfont{Times New Roman} % 修改mainfont为Times New Roman 否则默认的字体为弯尾版本
 
 \pagestyle{plain} % 只显示页码，不显示页眉
@@ -144,21 +145,20 @@
 
 % 目录页设置
 \ctexset{
-  contentsname = {目\qquad 录} % 目录标题内容（两个全角空格）
+  contentsname = {\zihao{3}\bfseries 目\qquad 录}, % 目录标题内容（两个全角空格）
+  tocdepth = {2}, % 目录深度 显示到二级标题
 }
-\setcounter{tocdepth}{2} % 设置目录深度为2
+\hypersetup{
+  pdfborder={0:0:0} % 设置超链接无边框
+}
 
 % 一级标题目录样式
-\titlecontents{section}[0pt]{\addvspace{2pt}\filright}%
-  {\heiti\contentspush{\thecontentslabel\ }}%
-  {}{\titlerule*[8pt]{·}\contentspage}
+\titlecontents{section}[0pt]{\addvspace{0pt}\filright}%
+  {\zihao{4}\bfseries\contentspush{\thecontentslabel\ }}%
+  {}{\titlerule*[6pt]{·}\contentspage}
 
 % 二级标题目录样式
-\titlecontents{subsection}[2em]{\addvspace{1pt}\filright}%
-  {\songti\zihao{-4}\contentspush{\thecontentslabel\ }}%
-  {}{\titlerule*[8pt]{·}\contentspage}
+\titlecontents{subsection}[2em]{\addvspace{0pt}\filright}%
+  {\zihao{4}\contentspush{\thecontentslabel\ }}%
+  {}{\titlerule*[6pt]{·}\contentspage}
 
-% 三级标题目录样式
-\titlecontents{subsubsection}[4em]{\addvspace{1pt}\filright}%
-  {\songti\zihao{-4}\contentspush{\thecontentslabel\ }}%
-  {}{\titlerule*[8pt]{·}\contentspage}
