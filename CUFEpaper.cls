@@ -41,6 +41,14 @@
 
 \pagestyle{plain} % 只显示页码，不显示页眉
 
+% 超链接设置
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    urlcolor=black
+}
+
 % Setter命令和默认值
 \newcommand\term[1]{\def\@term{#1}}
 \newcommand\course[1]{\def\@course{#1}}
@@ -147,9 +155,6 @@
 \ctexset{
   contentsname = {\zihao{3}\bfseries 目\qquad 录}, % 目录标题内容（两个全角空格）
   tocdepth = {2}, % 目录深度 显示到二级标题
-}
-\hypersetup{
-  pdfborder={0:0:0} % 设置超链接无边框
 }
 
 % 一级标题目录样式
