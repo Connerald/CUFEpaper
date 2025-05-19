@@ -129,6 +129,9 @@
   \end{center}
   \renewcommand{\baselinestretch}{1.5}\selectfont % 摘要内容行距1.5倍
   \par
+}{
+  \par
+  \clearpage
 }
 
 % 英文摘要页（可选）
