@@ -34,6 +34,7 @@
 \RequirePackage{amssymb} % 数学符号支持
 \RequirePackage{hyperref} % 超链接支持
 \RequirePackage{setspace} % 行距设置
+\RequirePackage{float} % 浮动体支持
 
 % 字体设置
 \setCJKmainfont[AutoFakeBold=3]{SimSun}
