@@ -13,15 +13,35 @@
    ```sh
    git clone https://github.com/Connerald/CUFEpaper.git
    ```
-   或直接点击右上角 Code -> Download ZIP 下载
+   或直接点击右上角 Code -> Download ZIP 下载/或右侧菜单直接下载最新 Releases 版本
 
 2. 编辑 `CUFEpaper.tex`，填写课程、姓名、学号等信息，填入文章内容。
 
-3. 编译即可生成符合规范的课程论文 PDF。（推荐使用 XeLaTeX ）
-   ```sh
-   xelatex CUFEpaper.tex
+3. 编译即可生成符合规范的课程论文 PDF。（推荐使用编译链）
+
+## 编译说明
+
+本模板推荐使用 XeLaTeX + Biber 的编译方式。
+
+如果你使用 **TeXstudio**，可以在“选项” → “配置 TeXstudio” → “构建” → “用户命令”中添加如下自定义编译链：
+
+```bash
+xelatex %.tex | biber % | xelatex %.tex | xelatex %.tex
+```
+
+然后在“构建”菜单里选择刚刚创建的命令即可完成完整编译流程。
+
+### 详细步骤：
+
+1. 打开 TeXstudio，进入“选项” → “配置 TeXstudio” → “构建”。
+
+2. 在“用户命令”里添加一个新命令，命名如 `xelatex+biber`，内容为：
+
    ```
-   目录和页码等内容需要两次及以上编译才能正确生成。
+   xelatex %.tex | biber % | xelatex %.tex | xelatex %.tex
+   ```
+
+3. 回到主界面，从“构建”菜单选择刚添加的 `xelatex+biber` 命令进行编译。
 
 ## 说明
 
@@ -39,6 +59,7 @@
 - 章节标题中文编号（如“一、”“（一）”）
 - 正文宋体小四号，固定行距
 - 章节标题、目录样式
+- 作者-年份制引文，编号制参考文献
 
 ## 待完善的功能
 
@@ -61,3 +82,6 @@
 
 3. CTeX 宏集手册（2022-07-14）.  
    - 链接：https://texdoc.org/serve/ctex/0
+
+4. 符合 GB/T 7714-2015 标准的 biblatex 参考文献样式（2025-03-03）
+   - 链接：https://ctan.math.illinois.edu/macros/latex/contrib/biblatex-contrib/biblatex-gb7714-2015/biblatex-gb7714-2015.pdf

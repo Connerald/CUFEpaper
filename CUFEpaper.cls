@@ -35,6 +35,13 @@
 \RequirePackage{hyperref} % 超链接支持
 \RequirePackage{setspace} % 行距设置
 \RequirePackage{float} % 浮动体支持
+\RequirePackage[
+  backend=biber,
+  style=gb7714-2015ay,
+  gbalign=right,
+  gbcitelabel=parensqj
+]{biblatex} % 作者-年份制引文，编号制参考文献
+\addbibresource{references.bib} % 指定参考文献数据库文件
 
 % 字体设置
 \setCJKmainfont[AutoFakeBold=3]{simsun.ttc}
@@ -171,3 +178,12 @@
   {\zihao{4}\contentspush{\thecontentslabel\ }}%
   {}{\titlerule*[6pt]{·}\contentspage}
 
+% 参考文献页设置
+\ctexset{
+  bibname = {\zihao{4}\bfseries 参考文献}, % 参考文献标题内容
+}
+
+\renewcommand{\mkgbnumlabel}[1]{[{#1}].} % 设置用[]包裹序号并加. 例如[1].
+
+\defbibheading{bibliography}[\bibname]{%
+  \section*{#1\vspace*{12pt}}}
