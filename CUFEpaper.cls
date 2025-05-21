@@ -37,7 +37,7 @@
 \RequirePackage{float} % 浮动体支持
 
 % 字体设置
-\setCJKmainfont[AutoFakeBold=3]{SimSun}
+\setCJKmainfont[AutoFakeBold=3]{simsun.ttc}
 \setmainfont{Times New Roman} % 修改mainfont为Times New Roman 否则默认的字体为弯尾版本
 
 \pagestyle{plain} % 只显示页码，不显示页眉
