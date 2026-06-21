@@ -72,13 +72,17 @@ xelatex %.tex | biber % | xelatex %.tex | xelatex %.tex
 
 1. 金融学院（2022-05-24）. 本科课程论文考核出题模板、报告格式等.  
    - 链接：https://sf.cufe.edu.cn/info/1121/11752.htm  
-   - 附件：
-     - 附件2：中央财经大学课程论文、报告、案例分析考核封面.docx  
-     - 附件3：课程论文、报告模板（参照本科生毕业论文模板）.docx  
-     - 附件4：课程论文、报告写作格式（参照本科生毕业论文格式要求）.docx  
+   - 本地归档：
+     - `docs/template-sources/course-paper/附件2：中央财经大学课程论文、报告、案例分析考核封面.docx`
+     - `docs/template-sources/course-paper/附件2：中央财经大学课程论文、报告、案例分析考核封面.pdf`
+     - `docs/template-sources/course-paper/附件3：课程论文、报告模板（参照本科生毕业论文模板）.doc`
+     - `docs/template-sources/course-paper/附件3：课程论文、报告模板（参照本科生毕业论文模板）.pdf`
+     - `docs/template-sources/course-paper/附件4：课程论文、报告写作格式（参照本科生毕业论文格式要求）.doc`
 
 2. 中央财经大学教务处（2024-03-01）. 本科毕业论文材料(2025届及以后)  
    - 链接：https://jwc.cufe.edu.cn/info/1124/3608.htm
+   - 本地归档：
+     - `docs/template-sources/undergraduate-thesis/附件1：本科生毕业论文（设计）格式要（全校本科生）.pdf`
 
 3. CTeX 宏集手册（2022-07-14）.  
    - 链接：https://texdoc.org/serve/ctex/0
